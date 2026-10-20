@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf2f8;
+  --surface: #ffffff;
+  --surface-sunken: #fdf2f8;
+  --foreground: #241019;
+  --foreground-soft: #6b5563;
+  --foreground-faint: #9c8a95;
+  --border: #f3d9e7;
+  --border-soft: #f8e6ef;
+
+  --brand-50: #fdf2f8;
+  --brand-100: #fce7f3;
+  --brand-200: #fbcfe8;
+  --brand-400: #f472b6;
+  --brand-500: #ec4899;
+  --brand-600: #db2777;
+  --brand-700: #9d174d;
+  --brand-900: #6b1739;
+
+  --violet-400: #c084fc;
+  --violet-500: #a855f7;
+  --violet-600: #9333ea;
+
+  --gold-100: #faf0d7;
+  --gold-500: #b3811a;
+  --gold-700: #8a5f10;
+
+  --teal-100: #d9f0ec;
+  --teal-500: #0e8272;
+  --teal-700: #0a5f53;
+
+  --wine-100: #f7e2e8;
+  --wine-500: #a13a5a;
+  --wine-700: #7a2743;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-foreground: var(--foreground);
+  --color-foreground-soft: var(--foreground-soft);
+  --color-foreground-faint: var(--foreground-faint);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-900: var(--brand-900);
+
+  --color-violet-400: var(--violet-400);
+  --color-violet-500: var(--violet-500);
+  --color-violet-600: var(--violet-600);
+
+  --color-gold-100: var(--gold-100);
+  --color-gold-500: var(--gold-500);
+  --color-gold-700: var(--gold-700);
+
+  --color-teal-100: var(--teal-100);
+  --color-teal-500: var(--teal-500);
+  --color-teal-700: var(--teal-700);
+
+  --color-wine-100: var(--wine-100);
+  --color-wine-500: var(--wine-500);
+  --color-wine-700: var(--wine-700);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--brand-200);
+  color: var(--brand-900);
+}
+
+/* Utility: tabular numerals for anything numeric-ish (ages, doses, dates) */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
